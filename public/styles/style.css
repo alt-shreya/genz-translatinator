@@ -1,0 +1,150 @@
+/* Reset styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bg-color: #83C5BE;
+    --head-color: #EDF6F9;
+    --head-background-color: #E29578;
+}
+
+/* Typography */
+
+body {
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+    color: #333;
+    background-color: var(--bg-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+/* Layout */
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--bg-color);
+}
+
+.header{
+    font-weight: 700px;
+}
+
+.header,
+.footer {
+    background-color: var(--head-background-color);
+    text-align: center;
+    padding: 16px;
+    color: var(--head-color);
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-weight: 100px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+}
+
+.form__label {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.form__input {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px;
+    margin-bottom: 16px;
+    resize: none;
+}
+
+.btn {
+    background-color: var(--bg-color);
+    color: var(--bg-color);
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    width: 100%;
+    max-width: 200px;
+}
+
+.btn:hover {
+    background-color: #e29578;
+}
+
+.btn--primary {
+    background-color: var(--bg-color);
+    color: black;
+}
+
+/* Responsive design */
+
+@media only screen and (max-width: 720px) {
+    .container {
+        padding: 16px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons li {
+    margin: 0 10px;
+}
+
+.social-icons a {
+    color: black;
+    font-size: 20px;
+    transition: all 0.2s ease-in-out;
+}
+
+.social-icons a:hover {
+    transform: translateY(-3px);
+}
