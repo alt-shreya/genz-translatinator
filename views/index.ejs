@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gen Z Translator</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Bebas+Neue|Montserrat:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css"
+    />
+
+    <link rel="stylesheet" href="/styles/style.css" type="text/css" />
+  </head>
+  <body>
+    <header class="header" style="background-color: #006d77">
+      <h1
+        class="title"
+        style="
+          font-family: 'Bebas Neue', cursive;
+          font-weight: normal;
+          text-align: center;
+        "
+      >
+        Gen Z Translat-inator
+      </h1>
+    </header>
+
+    <div class="container">
+      <form action="/" method="post" class="form">
+        <label
+          for="text"
+          class="form__label"
+          style="font-family: 'Montserrat', sans-serif; font-weight: bold"
+          >Enter Text:</label
+        >
+        <textarea
+          name="text"
+          id="text"
+          rows="10"
+          class="form__input"
+          style="font-family: 'Montserrat', sans-serif; font-weight: normal"
+          required
+        ></textarea>
+        <button class="btn btn--primary">Translate</button>
+        <% if (translation) { %>
+        <div class="translation">
+          <h2
+            class="subtitle"
+            style="font-family: 'Montserrat', sans-serif; font-weight: bold"
+          >
+            Translation:
+          </h2>
+          <p style="font-family: 'Montserrat', sans-serif; font-weight: normal">
+            <%= translation %>
+          </p>
+        </div>
+        <% } %>
+      </form>
+    </div>
+
+    <footer
+      class="footer"
+      style="
+        background-color: #006d77;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+      "
+    >
+      <p style="font-family: 'Montserrat', sans-serif; font-weight: normal">
+        Gen Z Translator &copy; 2023
+      </p>
+      <p style="font-family: 'Montserrat', sans-serif; font-weight: normal">
+        Made by alt-shreya
+      </p>
+      <div class="col-md-6">
+        <ul class="social-icons">
+          <li>
+            <a href="https://www.linkedin.com/in/alt-shreya"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com/discountdali"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/the_other_shreya/"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.github.com/alt-shreya"
+              ><i class="fab fa-github"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
